@@ -1,0 +1,19 @@
+# Questions for exercise 1
+- What is the difference between git and github? 
+--> git is a versioning tool that lets you manage and keep track of your source code history
+--> github is a place to manage multiple git repositorys in a cloud service
+- Name 3 benefits of a version control system: 
+  - keep history of changes
+  - develop new features on a different branch
+  - manage collaboration   
+- Name 3 alternatives to git: 
+  - AWS Code Commit
+  - Subversion
+  - Helix Core
+- Name 2 differences between git and other version control systems: 
+   - Git (distributed, every developer has a full copy of the codebase)
+   - Subversion (centralized, developers have to connect to a central server)
+   - Speed and performance when merging git is faster especially with larger codebases.
+- Name known issues related to game engines (Unreal, Unity) and version control systems:
+  - Binary file formats: especially the unity Game Scene is complicated to merge with another colaborator
+  - renaming folders leads to merge conflicts in unity
