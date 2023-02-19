@@ -1,0 +1,9 @@
+#pragma once
+// for use by Mochi applications
+
+#include "Mochi/Application.h"
+
+
+//---Entry Point------------------
+#include "Mochi/EntryPoint.h"
+//--------------------------------

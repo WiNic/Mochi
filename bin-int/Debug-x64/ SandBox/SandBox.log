@@ -1,3 +1,0 @@
-﻿  Application.cpp
-C:\dev\FH\Mochi\SandBox\src\Application.cpp(5,13): warning C4326: return type of 'main' should be 'int' instead of 'void'
-  SandBox.vcxproj -> C:\dev\FH\Mochi\bin\Debug-x64\ SandBox\SandBox.exe
