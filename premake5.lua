@@ -1,4 +1,5 @@
 workspace "Mochi"
+    startproject "SandBox"
     architecture "x64"
 
     configurations
@@ -19,13 +20,16 @@ project "Mochi"
     objdir("bin-int/" .. outputdir .. "/%{prj.name}")
 
     files
-    {
+    {   
+
         "%{prj.name}/src/**.h",
         "%{prj.name}/src/**.cpp"
     }
 
     includedirs
     {
+
+        "%{prj.name}/src",
         "%{prj.name}/vendor/spdlog/include"
     }
 
@@ -42,7 +46,7 @@ project "Mochi"
 
         postbuildcommands
         {
-            ("{COPY} %{cfg.buildtarget.relpath} ../bin/" .. outputdir .. "/Engine")
+            ("{COPY} %{cfg.buildtarget.relpath} ../bin/" .. outputdir .. "/SandBox")
         }
     
     filter "configurations:Debug"
@@ -58,8 +62,8 @@ project "Mochi"
         optimize "On"
 
 
-project "Engine"
-    location "Engine"
+project "SandBox"
+    location "SandBox"
     kind "ConsoleApp"
     language "C++"
 
